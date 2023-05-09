@@ -1,3 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/kalam');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Kalam';
+    scroll-behavior: smooth;
+  }
