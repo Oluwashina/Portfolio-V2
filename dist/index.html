@@ -7,22 +7,22 @@
     <title>Portfolio</title>
     <link href="./output.css" rel="stylesheet" />
 </head>
-<body class="bg-main">
-    <div class="px-6 py-6">
+<body class="bg-main scroll-smooth">
+    <div class="px-6 py-6" id="top">
 
-        <div class="flex justify-end cursor-pointer">
+        <a href="#contact" class="flex justify-end cursor-pointer">
             <p class="text-[#000000] text-base md:text-lg font-Kalam400">Contact</p>
-        </div>
+        </a>
 
         <div class="mt-8">
             <h6 class="text-[#000000] font-Kalam400 text-xl md:text-2xl">
                 Kure-Ojo Oluwashina
             </h6>
         </div>
-        <div class="mt-1">
-            <h1 class="text-[#000000] font-Kalam700 text-4xl md:text-9xl">Front-end Web</h1>
+        <div class="mt-3 md:mt-1">
+            <h1 class="text-[#000000] font-Kalam700 text-5xl md:text-9xl">Front-end Web</h1>
             <div class="flex flex-col md:flex-row justify-between">
-                <h1 class="text-[#000000] font-Kalam700 text-4xl md:text-9xl">Developer</h1>
+                <h1 class="text-[#000000] font-Kalam700 text-5xl md:text-9xl">Developer</h1>
                 <div class="mt-10 md:mt-0">
                     <div class="relative">
                         <img src="./assets/knight.svg" alt="knight" class="absolute left-0 -top-14 z-[-1]" />
@@ -41,9 +41,9 @@
         </div> -->
 
         <div class="hidden md:flex mt-1">
-            <div class="relative">
+            <div class="relative cursor-pointer">
                 <p class="text-[#000000] text-lg">Scroll Down</p>
-                <img src="./assets/arrow_down.svg" alt="arrow" class="absolute -top-6 -right-8" />
+                <img src="./assets/arrow_down.svg" alt="arrow" class="absolute animate-bounce w-[50px] h-[50px] -top-3 -right-6" />
             </div>
         </div>
 
@@ -132,7 +132,7 @@
                 </h6>
                 <img src="./assets/love-blue.svg" alt="love" />
             </div>
-            <div class="flex gap-2 mt-4">
+            <div class="grid grid-cols-2 overflow-x-scroll md:grid-cols-4 gap-2 mt-4">
                 <div>
                     <img src="./assets/client1.svg" alt="client"/>
                 </div>
@@ -152,7 +152,7 @@
         <div class="text-center mt-10">
             <h6 class="text-[#000000] text-3xl font-Kalam700">My work Experience</h6>
 
-            <div>
+            <div class="mt-4">
                 <img src="./assets/work.svg" alt="work" />
             </div>
         </div>
@@ -162,23 +162,23 @@
             <h6 class="text-[#000000] text-2xl font-Kalam700 max-w-lg mx-auto">
                 Have an idea or a concept that really excites you? what do you say? Let’s make magic together.
             </h6>
-            <div class="mt-6 bg-paper3 bg-no-repeat max-w-4xl mx-auto py-10 px-6">
+            <div class="mt-6 bg-paper3 bg-no-repeat max-w-4xl mx-auto py-10 px-6" id="contact">
                 <div>
                     <p class="text-[#000000] font-Kalam400 text-lg">Email Address:</p>
                     <h6 class="text-[#000000] font-Kalam700 text-xl">shinzbaba@gmail.com</h6>
                 </div>
 
-                <div class="flex justify-end mt-4 cursor-pointer">
+                <a href="#top" class="flex justify-end mt-4 cursor-pointer">
                     <img src="./assets/backToTop.svg" class="" />
-                </div>
+                </a>
 
                 <div class="mt-10 md:mt-14">
                     <p class="text-[#000000] font-Kalam400 text-lg">Socials:</p>
-                    <div class="flex justify-center items-center gap-4 md:gap-8">
-                        <a href="#" class="text-[#000000] font-Kalam700 text-xl">Twitter</a>
-                        <a href="#"  class="text-[#000000] font-Kalam700 text-xl">Linkedin</a>
-                        <a href="#" class="text-[#000000] font-Kalam700 text-xl">Instagram</a>
-                        <a href="#"  class="text-[#000000] font-Kalam700 text-xl">Github</a>
+                    <div class="flex justify-center items-center gap-6 md:gap-8">
+                        <a href="#" class="hidden md:block text-[#000000] font-Kalam700 text-xl">Twitter</a>
+                        <a href="https://www.linkedin.com/in/oluwashina-kure-ojo-7a1b53159/" target="_blank"  class="text-[#000000] font-Kalam700 text-xl">Linkedin</a>
+                        <a href="https://instagram.com/_oluwashinaojo?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="text-[#000000] font-Kalam700 text-xl">Instagram</a>
+                        <a href="https://github.com/Oluwashina" target="_blank"  class="text-[#000000] font-Kalam700 text-xl">Github</a>
                     </div>
                 </div>
             </div>

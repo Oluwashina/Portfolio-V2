@@ -9,7 +9,7 @@ module.exports = {
         Kalam700: ["Kalam Bold"],
       },
       backgroundImage: (theme) => ({
-        'main': "url('../dist/assets/Noise.svg')",
+        'main': "url('../dist/assets/Noise.png')",
         'paper': "url('../dist/assets/Paper.svg')",
         'paper2': "url('../dist/assets/shadow_lower.svg')",
         'paper3': "url('../dist/assets/contactPaper.svg')",
