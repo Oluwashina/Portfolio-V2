@@ -8,7 +8,7 @@
     <link href="./output.css" rel="stylesheet" />
 </head>
 <body class="bg-main scroll-smooth">
-    <div class="px-6 py-6" id="top">
+    <div class="px-8 py-6 2xl:px-16" id="top">
 
         <a href="#contact" class="flex justify-end cursor-pointer">
             <p class="text-[#000000] text-base md:text-lg font-Kalam400">Contact</p>
@@ -53,9 +53,11 @@
             <img src="./assets/zigzag.svg" alt="zig zag" class="w-[150px] h-[150px] absolute left-1/2 top-11 -translate-x-1/2 -translate-y-1/2" />
         </div>
 
-        <div class="mt-16 max-w-4xl mx-auto">
+        <div class="mt-20 max-w-4xl 2xl:max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2">
-                <div class="bg-paper py-10 px-6">
+                <div class="bg-paper py-10 2xl:py-16 px-6 relative">
+                    <img src="./assets/tape1.svg" class="absolute -top-6 -left-4 md:-top-24 md:-left-28 w-[60px] md:w-auto h-[60px] md:h-auto" alt="tape" />
+                    <img src="./assets/tape2.svg" class="block md:hidden absolute -top-6 -right-0 w-[60px] h-[60px]" alt="tape" />
                     <div class="flex">
                         <div class="relative">
                             <img src="./assets/circle.svg" alt="circle" />
@@ -67,12 +69,13 @@
                         <h4 class="uppercase font-Kalam700 text-2xl md:text-3xl">Cardvest
                         </h4>
                         <h6 class="mt-2 text-sm font-Kalam400">ReactJs, Redux, Tailwindcss</h6>
-                        <div class="flex md:justify-end mt-6">
+                        <div class="flex md:justify-end mt-8">
                             <a href="https://app.cardvest.ng" target="_blank" class="text-[#000000] font-Kalam700 text-sm">Visit website</a>
                         </div>
                     </div>
                 </div>
-                <div class="bg-paper py-10 px-6 ">
+                <div class="bg-paper py-10 2xl:py-16 px-6 relative">
+                    <img src="./assets/tape2.svg" class="hidden md:block md:absolute -top-16 -right-20" alt="tape" />
                     <div class="flex">
                         <div class="relative">
                             <img src="./assets/circle.svg" alt="circle" />
@@ -83,12 +86,12 @@
                         <h4 class="uppercase font-Kalam700 text-2xl md:text-3xl">Dart Africa
                         </h4>
                         <h6 class="mt-2 text-sm font-Kalam400">ReactJs, Redux, Tailwindcss</h6>
-                        <div class="flex md:justify-end mt-6">
+                        <div class="flex md:justify-end mt-8">
                             <a href="https://dartafrica.io" target="_blank" class="text-[#000000] font-Kalam700 text-sm">Visit website</a>
                         </div>
                     </div>
                 </div>
-                <div class="bg-paper2 py-10 px-6">
+                <div class="bg-paper2 py-10 2xl:py-16 px-6">
                     <div class="flex">
                         <div class="relative">
                             <img src="./assets/circle.svg" alt="circle" />
@@ -99,12 +102,12 @@
                         <h4 class="uppercase font-Kalam700 text-2xl md:text-3xl">BatchBills
                         </h4>
                         <h6 class="mt-2 text-sm font-Kalam400">ReactJs, Redux, Tailwindcss</h6>
-                        <div class="flex md:justify-end mt-6">
+                        <div class="flex md:justify-end mt-8">
                             <a href="https://batchbills.pages.dev/" target="_blank" class="text-[#000000] font-Kalam700 text-sm">Visit website</a>
                         </div>
                     </div>
                 </div>
-                <div class="bg-paper2 py-10 px-6">
+                <div class="bg-paper2 py-10 2xl:py-16 px-6">
                     <div class="flex">
                         <div class="relative">
                             <img src="./assets/circle.svg" alt="circle" />
@@ -115,7 +118,7 @@
                         <h4 class="uppercase font-Kalam700 text-2xl md:text-3xl">ReachADeal
                         </h4>
                         <h6 class="mt-2 text-sm font-Kalam400">ReactJs, Tailwindcss</h6>
-                        <div class="flex md:justify-end mt-6">
+                        <div class="flex md:justify-end mt-8">
                             <a href="https://reachdealll.netlify.app/" target="_blank" class="text-[#000000] font-Kalam700 text-sm">Visit website</a>
                         </div>
                     </div>
@@ -125,14 +128,14 @@
 
 
         <!-- testimonial -->
-        <div class="text-center mt-10">
+        <div class="text-center mt-10 md:mt-16">
             <div class="flex gap-1 items-center justify-center">
                 <h6 class="text-[#000000] text-2xl md:text-3xl font-Kalam700">
                     I worked with them and they loved it 
                 </h6>
                 <img src="./assets/love-blue.svg" alt="love" />
             </div>
-            <div class="grid grid-cols-2 overflow-x-scroll md:grid-cols-4 gap-2 mt-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
                 <div>
                     <img src="./assets/client1.svg" alt="client"/>
                 </div>
@@ -145,6 +148,7 @@
                 <div>
                     <img src="./assets/client1.svg" alt="client"/>
                 </div>
+                
             </div>            
         </div>
 
@@ -152,7 +156,7 @@
         <div class="text-center mt-10">
             <h6 class="text-[#000000] text-3xl font-Kalam700">My work Experience</h6>
 
-            <div class="mt-4">
+            <div class="mt-4 flex justify-center">
                 <img src="./assets/work.svg" alt="work" />
             </div>
         </div>
@@ -162,10 +166,12 @@
             <h6 class="text-[#000000] text-2xl font-Kalam700 max-w-lg mx-auto">
                 Have an idea or a concept that really excites you? what do you say? Let’s make magic together.
             </h6>
-            <div class="mt-6 bg-paper3 bg-no-repeat max-w-4xl mx-auto py-10 px-6" id="contact">
+            <div class="mt-6 md:mt-28 bg-paper3 bg-no-repeat max-w-4xl mx-auto py-10 px-6 relative" id="contact">
+                <img src="./assets/tape3.svg" class="absolute -top-4 md:-top-20 -left-4 md:-left-24 w-[60px] h-[60px] md:w-auto md:h-auto" alt="tape" />
+                <img src="./assets/tape4.svg" class="absolute -top-6 md:-top-20 -right-4 md:-right-40 w-[60px] h-[60px] md:w-auto md:h-auto" alt="tape" />
                 <div>
                     <p class="text-[#000000] font-Kalam400 text-lg">Email Address:</p>
-                    <h6 class="text-[#000000] font-Kalam700 text-xl">shinzbaba@gmail.com</h6>
+                    <a href="mailto:shinzbaba@gmail.com" class="text-[#000000] font-Kalam700 text-xl">shinzbaba@gmail.com</a>
                 </div>
 
                 <a href="#top" class="flex justify-end mt-4 cursor-pointer">
