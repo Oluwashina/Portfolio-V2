@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/kalam');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -803,14 +803,6 @@ video {
   text-align: center;
 }
 
-.font-Kalam400{
-  font-family: Kalam;
-}
-
-.font-Kalam700{
-  font-family: Kalam Bold;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -846,6 +838,10 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .uppercase{
   text-transform: uppercase;
 }
@@ -856,7 +852,7 @@ video {
 }
 
 body {
-  font-family: 'Kalam';
+  font-family: 'Kalam', cursive;
   scroll-behavior: smooth;
 }
 

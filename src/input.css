@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/kalam');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,6 @@
 
 
 body {
-    font-family: 'Kalam';
+    font-family: 'Kalam', cursive;
     scroll-behavior: smooth;
   }
