@@ -9,3 +9,6 @@ body {
     font-family: 'Kalam', cursive;
     scroll-behavior: smooth;
   }
+
+/* To start the watch -- */
+  /* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch  *
