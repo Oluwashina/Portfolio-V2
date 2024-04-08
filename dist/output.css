@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -532,16 +532,20 @@ video {
   position: relative;
 }
 
-.-bottom-6{
-  bottom: -1.5rem;
+.-bottom-16{
+  bottom: -4rem;
+}
+
+.-bottom-8{
+  bottom: -2rem;
+}
+
+.-left-10{
+  left: -2.5rem;
 }
 
 .-left-4{
   left: -1rem;
-}
-
-.-left-6{
-  left: -1.5rem;
 }
 
 .-right-0{
@@ -578,6 +582,10 @@ video {
 
 .-top-6{
   top: -1.5rem;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .left-0{
@@ -685,6 +693,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-5xl{
+  max-width: 64rem;
+}
+
 .max-w-lg{
   max-width: 32rem;
 }
@@ -747,10 +759,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-6{
   gap: 1.5rem;
 }
@@ -760,15 +768,11 @@ video {
 }
 
 .bg-main{
-  background-image: url('../dist/assets/Noise.png');
+  background-image: url('../dist/assets/Noise.svg');
 }
 
 .bg-paper{
-  background-image: url('../dist/assets/Paper.svg');
-}
-
-.bg-paper2{
-  background-image: url('../dist/assets/shadow_lower.svg');
+  background-image: url('../dist/assets/Paper.png');
 }
 
 .bg-paper3{
@@ -852,7 +856,7 @@ video {
 }
 
 body {
-  font-family: 'Kalam', cursive;
+  font-family: 'Kalam', 'sans-serif';
   scroll-behavior: smooth;
 }
 
@@ -871,6 +875,10 @@ body {
 
   .md\:-right-40{
     right: -10rem;
+  }
+
+  .md\:-top-14{
+    top: -3.5rem;
   }
 
   .md\:-top-20{
@@ -929,8 +937,8 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
