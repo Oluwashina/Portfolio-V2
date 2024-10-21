@@ -767,20 +767,8 @@ video {
   scroll-behavior: smooth;
 }
 
-.bg-main{
-  background-image: url('../dist/assets/Noise.svg');
-}
-
 .bg-paper{
   background-image: url('../dist/assets/Paper.png');
-}
-
-.bg-paper3{
-  background-image: url('../dist/assets/contactPaper.svg');
-}
-
-.bg-no-repeat{
-  background-repeat: no-repeat;
 }
 
 .px-6{
