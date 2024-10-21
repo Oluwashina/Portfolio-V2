@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main': "url('../dist/assets/Noise.svg')",
-        'paper': "url('../dist/assets/Paper.png')",
-        'paper2': "url('../dist/assets/shadow_lower.svg')",
-        'paper3': "url('../dist/assets/contactPaper.svg')",
-        'note': "url('../dist/assets/Note.svg')",
+        'main': "url('./assets/Noise.svg')",
+        'paper': "url('./assets/Paper.png')",
+        'paper2': "url('./assets/shadow_lower.svg')",
+        'paper3': "url('./assets/contactPaper.svg')",
+        'note': "url('./assets/Note.svg')",
 
       },
     },

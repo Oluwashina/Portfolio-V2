@@ -768,7 +768,7 @@ video {
 }
 
 .bg-paper{
-  background-image: url('../dist/assets/Paper.png');
+  background-image: url('./assets/Paper.png');
 }
 
 .px-6{
