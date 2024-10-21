@@ -771,6 +771,18 @@ video {
   background-image: url('./assets/Paper.png');
 }
 
+.bg-paper3{
+  background-image: url('./assets/contactPaper.svg');
+}
+
+.bg-main{
+  background-image: url('./assets/Noise.svg');
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
