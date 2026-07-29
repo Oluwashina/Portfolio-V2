@@ -94,10 +94,7 @@ function CaseStudyPanel({ project }: { project: Project }) {
 function ProjectCard({ project }: { project: Project }) {
   const [open, setOpen] = useState(project.defaultOpen ?? false);
   const prefersReducedMotion = useReducedMotion();
-
-  const clientLine = project.url
-    ? `${project.client}, ${project.url.replace(/^https?:\/\//, "")}`
-    : project.client;
+  const displayUrl = project.url?.replace(/^https?:\/\//, "");
 
   return (
     <motion.article
@@ -107,13 +104,7 @@ function ProjectCard({ project }: { project: Project }) {
       transition={{ duration: 0.4 }}
       className="group overflow-hidden rounded-2xl border hairline bg-surface transition-colors hover:border-foreground/20"
     >
-      <button
-        type="button"
-        aria-expanded={open}
-        aria-controls={`case-${project.id}`}
-        onClick={() => setOpen((value) => !value)}
-        className="flex w-full flex-col gap-6 p-6 text-left sm:flex-row sm:items-start sm:justify-between sm:p-8"
-      >
+      <div className="flex w-full flex-col gap-6 p-6 sm:flex-row sm:items-start sm:justify-between sm:p-8">
         <div className="flex-1">
           <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
             <span>{project.number}</span>
@@ -121,21 +112,48 @@ function ProjectCard({ project }: { project: Project }) {
             <span>{project.category}</span>
           </div>
 
-          <h3 className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
-            {project.title}
-          </h3>
-          <p className="mt-2 max-w-2xl text-pretty text-base text-muted-foreground">
-            {project.subtitle}
-          </p>
+          <button
+            type="button"
+            aria-expanded={open}
+            aria-controls={`case-${project.id}`}
+            onClick={() => setOpen((value) => !value)}
+            className="mt-4 w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+          >
+            <h3 className="text-2xl font-medium tracking-tight text-foreground sm:text-3xl">
+              {project.title}
+            </h3>
+            <p className="mt-2 max-w-2xl text-pretty text-base text-muted-foreground">
+              {project.subtitle}
+            </p>
+          </button>
 
-          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-muted-foreground">
-            <span>{clientLine}</span>
+          <div className="mt-4 flex flex-wrap items-center gap-x-1 gap-y-2 font-mono text-xs text-muted-foreground">
+            <span>{project.client}</span>
+            {project.url && displayUrl && (
+              <>
+                <span aria-hidden="true">,</span>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground underline-offset-2 transition-colors hover:text-signal hover:underline"
+                >
+                  {displayUrl}
+                </a>
+              </>
+            )}
             <span aria-hidden="true">,</span>
             <span>{project.role}</span>
           </div>
         </div>
 
-        <div className="flex items-center gap-3 sm:pt-2">
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls={`case-${project.id}`}
+          onClick={() => setOpen((value) => !value)}
+          className="flex shrink-0 items-center gap-3 sm:pt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+        >
           <span className="hidden font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground sm:inline">
             {open ? "Hide case study" : "Read case study"}
           </span>
@@ -145,8 +163,8 @@ function ProjectCard({ project }: { project: Project }) {
           >
             <ArrowRightIcon />
           </span>
-        </div>
-      </button>
+        </button>
+      </div>
 
       <AnimatePresence initial={false}>
         {open && (

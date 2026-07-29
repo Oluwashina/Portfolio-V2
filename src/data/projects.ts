@@ -96,13 +96,85 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "queposts",
+    id: "terebinth",
     number: "03",
+    category: "Care / Healthcare",
+    title: "Terebinth Limited",
+    subtitle:
+      "Marketing site for a Fylde Coast residential care provider with three registered homes.",
+    client: "Terebinth Limited",
+    url: "https://terebinthltd.co.uk",
+    role: "Frontend Engineer",
+    problem:
+      "Terebinth needed a site that could represent multiple care homes under one brand, surface CQC registration status for each location, and give families and referral professionals a clear path to get in touch without the tone feeling cold or corporate.",
+    architecture: [
+      "Structured the site around repeatable location and service sections so each home could share the same layout while keeping its own CQC status, copy and contact flows.",
+      "Built enquiry and referral entry points early in the page flow so the primary actions stayed visible on mobile, where most family research starts.",
+      "Used a calm visual system with strong typography and clear section hierarchy so dense care information stayed readable and trustworthy.",
+    ],
+    challenges: [
+      "Presenting regulation and inspection status accurately across three separate services without confusing visitors.",
+      "Balancing warmth and reassurance in the copy and layout with the formality families expect from a care provider.",
+      "Keeping performance solid with image heavy location sections and review content on slower mobile connections.",
+    ],
+    impact: [
+      { label: "Homes featured", value: "Redbricks, Watson House, Mariners Court" },
+      { label: "Regions", value: "Blackpool, Thornton Cleveleys, Fleetwood" },
+      { label: "Focus", value: "Family enquiry + referral" },
+      { label: "Status", value: "Live" },
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    id: "energy",
+    number: "04",
+    category: "Music / Campaign",
+    title: "Tiwa Savage: Energy",
+    subtitle:
+      "Interactive release site where fans build and share custom playing cards for a new single.",
+    client: "Tiwa Savage",
+    url: "https://energy-tiwasavage.netlify.app",
+    role: "Frontend Engineer",
+    problem:
+      "The Energy release needed more than a standard landing page. The team wanted a shareable moment tied to the single: upload a photo, choose a suit and rank, preview the card, then download or post it for Instagram, X and TikTok.",
+    architecture: [
+      "Built the card builder as a self contained flow with upload, suit and rank selection, live preview, and export at 1080 by 1520 for social platforms.",
+      "Handled photo positioning with drag on the preview so users could frame their image before export without leaving the page.",
+      "Kept the release story and listen links alongside the interactive tool so the campaign worked for both passive listeners and fans who wanted to participate.",
+    ],
+    challenges: [
+      "Making client side image composition feel instant on mid range phones with large uploads up to 10MB.",
+      "Designing a preview that matched the exported card closely enough that fans would trust what they shared.",
+      "Shipping a polished campaign surface on a tight release timeline without sacrificing mobile usability.",
+    ],
+    impact: [
+      { label: "Core feature", value: "Custom playing card builder" },
+      { label: "Export size", value: "1080 × 1520" },
+      { label: "Channels", value: "Instagram, X, TikTok" },
+      { label: "Status", value: "Live" },
+    ],
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML Canvas",
+      "Netlify",
+    ],
+  },
+  {
+    id: "queposts",
+    number: "05",
     category: "Directory / Listings",
     title: "QuePosts",
     subtitle:
       "Business listing platform with paired customer portal and admin dashboard.",
     client: "QuePosts",
+    url: "https://queposts.com",
     role: "Frontend Engineer, end to end",
     problem:
       "QuePosts required two aligned experiences: a public listings portal and an internal admin dashboard, delivered on a schedule that did not allow for a slow handoff between design and engineering.",
