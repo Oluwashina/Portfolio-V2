@@ -1,18 +1,61 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'main': "url('./assets/Noise.svg')",
-        'paper': "url('./assets/Paper.png')",
-        'paper2': "url('./assets/shadow_lower.svg')",
-        'paper3': "url('./assets/contactPaper.svg')",
-        'note': "url('./assets/Note.svg')",
-
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        surface: {
+          DEFAULT: "var(--surface)",
+          elevated: "var(--surface-elevated)",
+        },
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+        primary: {
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
+        },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
+        },
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        accent: {
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
+        },
+        signal: {
+          DEFAULT: "var(--signal)",
+          foreground: "var(--signal-foreground)",
+        },
+        border: "var(--border)",
+        hairline: "var(--hairline)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: [
+          "Geist",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "sans-serif",
+        ],
+        mono: ['"Geist Mono"', "ui-monospace", "SF Mono", "Menlo", "monospace"],
       },
     },
   },
   plugins: [],
-}
-
+};

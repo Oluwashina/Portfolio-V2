@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: oklch(16% 0.008 264);
+    --foreground: oklch(96.5% 0.005 260);
+    --surface: oklch(19% 0.008 264);
+    --surface-elevated: oklch(22% 0.008 264);
+    --card: oklch(19% 0.008 264);
+    --card-foreground: oklch(96.5% 0.005 260);
+    --primary: oklch(96.5% 0.005 260);
+    --primary-foreground: oklch(16% 0.008 264);
+    --secondary: oklch(24% 0.008 264);
+    --secondary-foreground: oklch(92% 0.005 260);
+    --muted: oklch(22% 0.008 264);
+    --muted-foreground: oklch(68% 0.012 260);
+    --accent: oklch(24% 0.008 264);
+    --accent-foreground: oklch(96% 0.005 260);
+    --signal: oklch(78% 0.14 235);
+    --signal-foreground: oklch(16% 0.008 264);
+    --border: oklch(100% 0 0 / 0.08);
+    --hairline: oklch(100% 0 0 / 0.06);
+    --input: oklch(100% 0 0 / 0.1);
+    --ring: oklch(78% 0.14 235 / 0.6);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply min-h-screen bg-background font-sans text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--signal) 35%, transparent);
+    color: var(--foreground);
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-1 ring-offset-background;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-6;
+  }
+
+  .hairline {
+    border-color: var(--hairline);
+  }
+
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, var(--hairline) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--hairline) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(#000, #0000 70%);
+  }
+
+  .glass {
+    background-color: color-mix(in oklab, var(--background) 60%, transparent);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    backdrop-filter: saturate(180%) blur(14px);
+  }
+
+  .signal-dot::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    z-index: -1;
+    border-radius: 9999px;
+    background: var(--signal);
+    filter: blur(2px);
+    animation: signal-pulse 2.4s ease-in-out infinite;
+  }
+
+  .section-label-line {
+    display: inline-block;
+    height: 1px;
+    width: 1.5rem;
+    flex-shrink: 0;
+    background-color: color-mix(in oklab, var(--signal) 70%, transparent);
+  }
+
+  .text-signal-soft {
+    color: color-mix(in oklab, var(--signal) 80%, transparent);
+  }
+}
+
+@keyframes signal-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+}
