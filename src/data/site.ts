@@ -21,9 +21,9 @@ export const site = {
     email: "thedevoluwashina@gmail.com",
     phone: "+234 706 082 5698",
     phoneHref: "tel:+2347060825698",
-    location: "Nigeria, Remote",
     github: "https://github.com/Oluwashina",
     linkedin: "https://www.linkedin.com/in/oluwashina-kure-ojo",
+    calendly: "https://calendly.com/shinzbaba/30min",
   },
   nav: [
     { label: "Work", href: "#work" },

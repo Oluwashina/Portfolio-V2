@@ -80,6 +80,15 @@ export function Hero() {
             Download résumé
             <FileDownIcon />
           </a>
+          <a
+            href={site.contact.calendly}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-2 rounded-md border hairline px-4 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          >
+            Book a call
+            <ArrowRightIcon className="h-4 w-4" />
+          </a>
         </motion.div>
 
         <motion.dl

@@ -10,8 +10,13 @@ const contactLinks = [
     value: site.contact.email,
     href: `mailto:${site.contact.email}`,
   },
+  {
+    label: "Schedule",
+    value: "Book a 30 min call",
+    href: site.contact.calendly,
+    external: true,
+  },
   { label: "Phone", value: site.contact.phone, href: site.contact.phoneHref },
-  { label: "Location", value: site.contact.location, href: "#contact" },
   {
     label: "GitHub",
     value: "github.com/Oluwashina",
