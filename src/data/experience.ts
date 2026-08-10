@@ -7,7 +7,7 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    period: "2026 to Present",
+    period: "2024 to Present",
     title: "Frontend Engineer",
     company: "Pandar Resources LLC",
     description:
